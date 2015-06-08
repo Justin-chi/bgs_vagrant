@@ -31,7 +31,7 @@ if ! grep 'PEERDNS=no' /etc/sysconfig/network-scripts/ifcfg-enp0s3; then
   systemctl restart NetworkManager
 fi
 
-if ! ping www.google.com -c 5; then 
+if ! ping www.baidu.com -c 5; then 
   echo "${red} No internet connection, check your route and DNS setup ${reset}"
   exit 1
 fi
